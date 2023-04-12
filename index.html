@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Style -->
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Swiper -->
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- bootstrap -->
+
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+</head>
+<!-- * name Start * -->
+<!-- * name End * -->
+
+<body>
+    <!-- * web-loader Start * -->
+    <div id="web-loader" class="web-loader">
+        <svg>
+            <filter id="gooev">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+                <feColorMatrix values="
+                            1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 20 -10
+                            "></feColorMatrix>
+            </filter>
+        </svg>
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span class="rotate" style="--j:0;"></span>
+            <span class="rotate" style="--j:1;"></span>
+            <span class="rotate" style="--j:2;"></span>
+            <span class="rotate" style="--j:3;"></span>
+            <span class="rotate" style="--j:4;"></span>
+        </div>
+    </div>
+    <!-- * web-loader End * -->
+
+    <!-- * Nav Start * -->
+    <section id="Nav">
+
+        <nav>
+            <div class="brand">
+                <img src="assets/images/Untitled.png" alt="">
+                <p>CG</p>
+            </div>
+            <ul>
+                <a href="#" class="nav-active">
+                    <li class="navbar-item">
+                        <i class="bi bi-basket2-fill"></i>
+                        <p>Store</p>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="navbar-item">
+                        <i class="bi bi-command"></i>
+                        <p>Library</p>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="navbar-item">
+                        <i class="bi bi-globe"></i>
+                        <p>Community</p>
+                    </li>
+                </a>
+                <li class="navbar-hr">
+                </li>
+                <a href="#">
+                    <li class="navbar-item">
+                        <i class="bi bi-wallet"></i>
+                        <p>Wallet</p>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="navbar-item">
+                        <i class="bi bi-cloud-arrow-down"></i>
+                        <p>Downloads</p>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="navbar-item">
+                        <i class="bi bi-gear"></i>
+                        <p>Settings</p>
+                    </li>
+                </a>
+            </ul>
+
+        </nav>
+    </section>
+    <!-- * Nav End * -->
+    <nav class="top-nav">
+        <div class="w-100 h-100 position-relative">
+            <div class="nav-top-search-box">
+                <button><i class="bi bi-search"></i></button>
+                <input type="text" placeholder="Search some thing">
+            </div>
+            <div class="dropdown">
+                <button class="account-btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="bi bi-person-fill"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <p class="title">Action</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-gear-wide-connected me-2"></i>
+                            Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-box-arrow-left me-2"></i>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--* LOG Start *-->
+            <button class="nav-top-item me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#LogOffCanvas"
+                aria-controls="LogOffCanvas">
+                <i class="bi bi-file-earmark-text-fill"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="LogOffCanvas" aria-labelledby="LogOffCanvas"
+                data-bs-theme="dark">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Log</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="overflow-y-auto h-100">
+                        <div class="alert alert-dark">
+                            <h3>dada</h3>
+                            <p>mmd is doint to felna</p>
+                            <h5 class="mt-3">time 20:15 2/5/2019</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--* LOG Start *-->
+
+            <!--* Notifications Start *-->
+            <button class="nav-top-item me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#NotificationsOffCanvas"
+                aria-controls="NotificationsOffCanvas">
+                <i class="bi bi-bell-fill"></i>
+            </button>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="NotificationsOffCanvas" aria-labelledby="NotificationsOffCanvas"
+                data-bs-theme="dark">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Notifications</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="overflow-y-auto h-95 overflow-hidden">
+                        <div class="alert alert-dark" role="alert">
+                            A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                        </div>
+                        <div class="alert alert-dark" role="alert">
+                            A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                        </div>
+                        <div class="alert alert-dark" role="alert">
+                            A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                        </div>
+                    </div>
+                    <div class="notif-button">
+                        <button class="btn btn-outline-warning">Clear</button>
+                    </div>
+                </div>
+            </div>
+            <!--* Notifications Start *-->
+
+            <!--* Refresh Start *-->
+            <button class="nav-top-item me-2" type="button">
+                <i class="bi bi-arrow-clockwise"></i>
+            </button>
+            <!--* Refresh Start *-->
+        </div>
+    </nav>
+    <!-- * Main Start * -->
+    <section id="Main">
+        
+    </section>
+    <!-- * Main End * -->
+
+
+
+
+
+
+    <!-- 
+    <div class="account-box">
+    <div class="account">
+                    <a class="img-acc" href="">
+                        <img src="assets/images/Untitled.png" alt="">
+                    </a>
+                    <div class="info">
+                        <a href="">
+                            <h1>Awni</h1>
+                        </a>
+                        <a href="" class="game">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                            <p>Rust</p>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <button class="btn logout"><i class="bi bi-box-arrow-right"></i></button>
+                        <button class="btn logout"><i class="bi bi-gear-wide"></i></button>
+                    </div>
+                </div>
+</div> 
+-->
+
+
+    <!-- * Scripts * -->
+    <!-- jquery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.2.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Text type -->
+    <script src="assets/js/typed.min.js"></script>
+    <script>
+        var typed = new Typed('#headerType', {
+            strings: [
+                "",
+            ],
+            loop: true,
+            typeSpeed: 120,
+            backSpeed: 80,
+        });
+    </script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
